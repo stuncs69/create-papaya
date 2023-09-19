@@ -1,0 +1,19 @@
+{
+  "name": "create-papaya",
+  "author": "stuncs69",
+  "version": "0.0.6",
+  "description": "Create a new Papaya.js project",
+  "main": "index.js",
+  "bin": {
+    "create-papaya": "index.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "papaya.js": "^0.0.7",
+    "colors": "^1.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
