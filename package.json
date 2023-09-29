@@ -11,7 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0",
-    "papaya.js": "^0.0.11"
+    "create-papaya": "^0.0.9",
+    "papaya.js": "^0.0.16"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

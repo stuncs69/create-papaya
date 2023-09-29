@@ -1,9 +1,12 @@
-import { PapayaConfig } from "papaya.js";
+import { PapayaConfig } from "papaya.js"
 
 export default class Config extends PapayaConfig {
     configuration = {
-        dynamicPublics: false,
-        port: 3000,
+        dynamicPublics: true,
         allowClasses: true,
+        port: 3000,
+    }
+    logic() {
+        console.log("Config loaded!")
     }
 }

@@ -1,10 +1,10 @@
-import { getPublicFileContents, PapayaRoute } from "papaya.js";
+import { renderPublic, renderEJS, extractGetParameters, PapayaRoute } from "papaya.js"
 
-export default class Index extends PapayaRoute {
-    path: string = "/";
+export default class GetIndex extends PapayaRoute {
+    path = "/";
     callback = () => {
         return new Promise((resolve) => {
-            resolve(getPublicFileContents("index.html"));
+            resolve(renderPublic("index.html"));
         })
-    }
+    };
 }
