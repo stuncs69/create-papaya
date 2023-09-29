@@ -1,7 +1,7 @@
 {
   "name": "create-papaya",
   "author": "stuncs69",
-  "version": "0.0.7",
+  "version": "0.0.10",
   "description": "Create a new Papaya.js project",
   "main": "index.js",
   "bin": {
