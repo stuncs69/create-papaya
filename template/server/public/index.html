@@ -12,11 +12,18 @@
         <hr>
         <p>Edit <code>/server/get/index.ts</code> to begin making your next big application.</p><br>
         <p>This file, alongside everything that makes this page look the way it is, sits in <code>/server/public/</code>. you can delete this file or add others to your need, and call them using <code>getPublicFileContents()</code></p>
-        <form method="get" action="form">
-            <input type="text" name="name" placeholder="Enter your name"><br>
-            <input type="submit" value="Submit">
-        </form><br>
+        <div>
+            <input type="text" name="name" placeholder="Enter your name" id="name"><br>
+            <button id="submit">Submit</button>
+        </div><br>
         <img class="cat" src="/cat.gif" alt="Image of a cat 😄">
+        <script>
+
+
+document.getElementById("submit").addEventListener("click", (e) => {
+    window.location.href = "/form/" + document.getElementById("name").value;
+})
+        </script>
     </div>
 </body>
 </html>

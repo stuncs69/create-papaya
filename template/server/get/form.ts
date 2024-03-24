@@ -1,12 +1,11 @@
-import { PapayaRoute, extractGetParameters, renderEJS } from "papaya.js";
+import { PapayaRoute, extractGetParameters, render } from "papaya.js";
 
 export default class GetForm extends PapayaRoute {
-    path = "/form";
-    callback = (request: Request) => {
+    path = "/form/[name]";
+    callback = (request: Request, _x: any, _y: any, query) => {
         return new Promise((resolve) => {
-            let getParams = extractGetParameters(request);
-            console.log(getParams);
-            renderEJS("form.ejs", getParams).then((html) => {
+            // query should be { name: value }
+            render("form.pug", query).then((html) => {
                 resolve(html);
             })
         })

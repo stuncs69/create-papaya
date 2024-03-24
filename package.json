@@ -1,7 +1,7 @@
 {
   "name": "create-papaya",
   "author": "stuncs69",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Create a new Papaya.js project",
   "main": "index.js",
   "bin": {
@@ -12,7 +12,7 @@
   "dependencies": {
     "colors": "^1.4.0",
     "create-papaya": "^0.0.9",
-    "papaya.js": "^0.0.16"
+    "papaya.js": "0.0.19-b"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

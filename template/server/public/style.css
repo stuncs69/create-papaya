@@ -34,7 +34,7 @@ code {
     border-radius: 0.2rem;
 }
 
-form > input[type="text"] {
+div > input[type="text"] {
     border: none;
     padding: 0.5rem;
     border-top-right-radius: 1rem;
@@ -42,7 +42,7 @@ form > input[type="text"] {
     width: 20rem;
 }
 
-form > input[type="submit"] {
+button {
     border: none;
     background-color: #FF9800;
     transition: 300ms;
@@ -52,7 +52,7 @@ form > input[type="submit"] {
     border-bottom-right-radius: 1rem;
 }
 
-form > input[type="submit"]:hover {
+button {
     background-color: #FF8000;
     cursor: pointer;
 }
